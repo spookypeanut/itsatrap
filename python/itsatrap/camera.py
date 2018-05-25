@@ -10,6 +10,6 @@ class Camera(object):
     def take_photo(self, filepath):
         self._picamera.start_preview()
         # Camera warm-up time
-        sleep(2)
+        sleep(.5)
         self._picamera.capture(filepath)
 
