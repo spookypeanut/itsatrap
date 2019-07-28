@@ -1,6 +1,11 @@
 import RPi.GPIO as GPIO
 from datetime import datetime, timedelta
 
+
+""" A class for the PIR sensor. I use the HC-SR501:
+http://henrysbench.capnfatz.com/henrys-bench/arduino-sensors-and-input/arduino-hc-sr501-motion-sensor-tutorial/
+"""
+
 PIR_PIN = 7
 NUM_TIMES = 3
 NUM_SECONDS = 1
