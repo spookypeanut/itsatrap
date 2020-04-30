@@ -3,6 +3,8 @@ from datetime import datetime, timedelta
 
 
 """ A class for the PIR sensor. I use the HC-SR501:
+https://thepihut.com/products/pir-infrared-motion-sensor-hc-sr501
+https://www.mpja.com/download/31227sc.pdf
 http://henrysbench.capnfatz.com/henrys-bench/arduino-sensors-and-input/arduino-hc-sr501-motion-sensor-tutorial/
 """
 
