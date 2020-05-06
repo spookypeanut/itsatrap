@@ -4,12 +4,11 @@ from picamera import PiCamera
 
 class Camera(object):
     def __init__(self):
-        self._picamera = PiCamera()
-        self._picamera.resolution = "1080p"
+        self.resolution = "1080p"
 
     def take_photo(self, filepath):
-        self._picamera.start_preview()
-        # Camera warm-up time
-        sleep(.5)
-        self._picamera.capture(filepath)
-
+        with PiCamera() as camera:
+            # Camera warm-up time
+            camera.resolution = "1080p"
+            sleep(.5)
+            camera.capture(filepath)
